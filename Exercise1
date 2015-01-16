@@ -1,0 +1,35 @@
+#Get user input
+num1= int(raw_input('Enter your first number'))
+num2= int(raw_input('Enter your second number'))
+
+#make sure we arent dividing by zero
+while num2==0:
+    print ("please input a number other than 0 if you want a quotient")
+    num2= int(raw_input('Enter your second number'))
+
+
+print (num1)
+print (num2)
+print type(num1)
+
+#run the code
+sum=int(num1+num2)
+print ("The sum of your numbers is:", + sum)
+if num1>=num2:
+    difference=int(num1-num2)
+else:
+    difference=int(num2-num1)
+
+print ("the difference of your numbers is:", + difference)
+
+product=int(num1*num2)
+print ("the product of your numbers is:", + product)
+
+remainder=num1%num2
+quotient=(num1-remainder)/num2
+
+print ("the quotient is:", quotient, "with a remainder of", remainder)
+
+
+print type(quotient)
+
