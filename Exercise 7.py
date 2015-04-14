@@ -12,7 +12,7 @@ temperatures_of_cities = {
 conversion_temperature = []
 for key in temperatures_of_cities:
     un_converted_temerpatures = temperatures_of_cities.get(key[0:])
-    f_or_c = un_converted_temerpatures[-1:]
+    f_or_c = un_converted_temerpatures[-1]
 
     number = un_converted_temerpatures[:-1]
     number = int(number)
