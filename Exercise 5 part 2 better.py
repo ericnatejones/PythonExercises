@@ -1,4 +1,5 @@
 __author__ = 'macuser'
+import operator
 
 The_Bible = open('The_Bible', 'r')
 bible_dictionary = {}
