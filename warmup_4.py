@@ -1,19 +1,12 @@
-counter = 1
-list_of_current_prime_numbers = [3]
-add_number_to_list = False
-while True:
-    counter += 2
+def sum13(nums):
+    total = 0
+    for number in nums:
+        if number == 13:
+            return total
+        else:
+            total += number
+    return total
 
-    for number in range(1,len(list_of_current_prime_numbers),2):
-        if number % counter == 0:
-            add_number_to_list = number
-            break
-
-    if add_number_to_list:
-        list_of_current_prime_numbers.append(add_number_to_list)
-        add_number_to_list = False
-        print list_of_current_prime_numbers
-
-
-
-
+print sum13([1, 2, 2, 1])
+print sum13([1, 1])
+print sum13([1, 2, 2, 1, 13])
